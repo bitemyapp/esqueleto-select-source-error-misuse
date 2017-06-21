@@ -1,0 +1,48 @@
+name:                test-proj
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/githubuser/test#readme
+license:             BSD3
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2017 Author name here
+category:            Web
+extra-source-files:
+- README.md
+
+default-extensions:
+  - BangPatterns
+  - FlexibleContexts
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - LambdaCase
+  - MultiParamTypeClasses
+  - OverloadedStrings
+  - PartialTypeSignatures
+  - QuasiQuotes
+  - RecordWildCards
+  - TemplateHaskell
+  - TypeFamilies
+
+dependencies:
+  - base >= 4.7 && < 5
+  - conduit
+  - containers
+  - esqueleto
+  - lens
+  - mtl
+  - persistent
+  - persistent-sqlite
+  - persistent-template
+  - resourcet
+  - text
+  - transformers
+
+library:
+  source-dirs: src
+
+executables:
+  test-proj:
+    source-dirs:      src
+    main:             Main.hs
